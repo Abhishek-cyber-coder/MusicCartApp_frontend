@@ -3,7 +3,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { getLocalStorageData } from "../utils/helper";
 
-const backendUrl = "http://localhost:3000/api/v1/feedback";
+const backendUrl = `${import.meta.env.REACT_APP_BACKEND_URL}/feedback`;
 
 export const sendUserFeedbackApi = async ({ typeOfFeedback, message }) => {
   try {

@@ -1,8 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-const backendUrl = `http://localhost:3000/api/v1/auth`;
+const backendUrl = `${import.meta.env.REACT_APP_BACKEND_URL}/auth`;
 export const registerUserAPI = async ({ name, mobileNum, email, password }) => {
   try {
     const requestUrl = `${backendUrl}/register`;

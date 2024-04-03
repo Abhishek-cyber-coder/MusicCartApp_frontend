@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 import { getLocalStorageData } from "../utils/helper";
-const backendUrl = `http://localhost:3000/api/v1/cart`;
+const backendUrl = `${import.meta.env.REACT_APP_BACKEND_URL}/cart`;
 
 const token = getLocalStorageData("token");
 
