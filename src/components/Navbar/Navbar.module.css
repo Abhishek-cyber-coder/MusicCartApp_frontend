@@ -1,0 +1,152 @@
+.main {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar {
+  width: 100vw;
+
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  color: white;
+  font-family: var(--primary-fontFamily);
+  font-size: 1rem;
+  font-weight: 500;
+  gap: 28%;
+}
+
+.firstSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.firstSection > img {
+  height: 33px;
+  width: 33px;
+}
+
+.midSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.lastSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Navigation Section */
+
+.navigationSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  background: white;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  margin-left: 6rem;
+  font-family: var(--primary-fontFamily);
+  font-weight: 400;
+  font-size: 1.2rem;
+  gap: 1rem;
+}
+
+.viewCartSection {
+  display: flex;
+  align-items: center;
+  margin-right: 7rem;
+  gap: 2rem;
+  position: relative;
+}
+
+.viewCartBtn {
+  display: flex;
+  align-items: center;
+  background-color: #1d7000;
+  color: white;
+  font-weight: 400;
+  font-family: var(--primary-fontFamily);
+  font-size: 1rem;
+  gap: 1rem;
+  padding: 9px 1rem;
+  border-radius: 26px;
+}
+
+.viewCartBtn > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.viewCartBtn > div > img {
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
+.profileIconBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.75rem;
+  width: 3.75rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+.profileIconBtn > p {
+  font-family: var(--primary-fontFamily);
+  font-size: 1.8rem;
+  font-weight: 500;
+  user-select: none;
+}
+
+.profileIconBox {
+  border: 1px solid #dddddd;
+  top: 4rem;
+  left: 6.5rem;
+  height: 6.375rem;
+  width: 90%;
+  border-radius: 25px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 0px 20px 0px #0000005e;
+  font-family: var(--primary-fontFamily);
+  font-weight: 500;
+  font-size: 1.3rem;
+  z-index: 2;
+}
+
+.profileIconBox > p:nth-child(1) {
+  line-height: 3rem;
+  width: 100%;
+  height: 50%;
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+  border-radius: 25px 25px 0 0;
+}
+
+.profileIconBox > p:nth-child(2) {
+  line-height: 3rem;
+  text-align: center;
+  height: 50%;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 0 0 25px 25px;
+  user-select: none;
+}

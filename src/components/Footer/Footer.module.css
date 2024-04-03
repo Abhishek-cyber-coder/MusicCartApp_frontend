@@ -1,0 +1,17 @@
+.mainCover {
+  /* position: fixed;
+  bottom: 0; */
+  height: 8vh;
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.mainCover > p {
+  font-family: var(--primary-fontFamily);
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+}

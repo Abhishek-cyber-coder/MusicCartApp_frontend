@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  background-color: #2e0052;
+  height: 9vh;
+  display: grid;
+  place-items: center;
+  padding-inline: 5vw;
+
+  div {
+    background-color: white;
+    height: 6vh;
+    width: 100%;
+    border: none;
+    border-radius: 1vh;
+    display: flex;
+    align-items: center;
+    padding-inline: 2vw;
+    column-gap: 1vw;
+  }
+
+  img {
+    height: 4vh;
+  }
+
+  input {
+    border: none;
+    font-family: Roboto;
+    font-size: 2.3vh;
+    outline: none;
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+.mobileHeader {
+  /* width: 100vw; */
+  background-color: #2e0052;
+  display: flex;
+  align-items: center;
+  height: 9vh;
+  padding-inline: 3vw;
+  column-gap: 1vw;
+  padding-top: 1vh;
+}
+
+.mobileHeader img {
+  height: 6vh;
+}
+
+.mobileHeader span {
+  font-size: 3vh;
+  color: white;
+  font-weight: 500;
+}

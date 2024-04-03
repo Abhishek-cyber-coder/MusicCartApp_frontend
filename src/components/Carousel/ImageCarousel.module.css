@@ -1,0 +1,42 @@
+.carousel-container {
+  position: relative;
+}
+
+.carousel-image {
+  border: 2px solid #000000;
+  border-radius: 1vh;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-navigation {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-button {
+  height: 1.5vh;
+  cursor: pointer;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid #a1a1a1;
+  background-color: white;
+}
+
+.carousel-indicator.active {
+  background-color: #2e0052;
+}

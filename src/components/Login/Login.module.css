@@ -1,0 +1,134 @@
+.mainContainer {
+  height: calc(100vh - 8vh);
+  overflow-y: auto;
+}
+
+.logo {
+  margin-top: 2rem;
+}
+
+.loginBox {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 31vw;
+  border-radius: 1.5rem;
+  border: 3px solid #d9d9d9;
+  padding: 1.5rem 2rem;
+}
+
+.heading {
+  font-family: var(--primary-fontFamily);
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+.loginBox > label {
+  font-family: var(--primary-fontFamily);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.loginBox > input {
+  font-family: var(--primary-fontFamily);
+  font-weight: 400;
+  font-size: 1rem;
+  border: 2px solid #b6b6b6;
+  border-radius: 8px;
+  outline: none;
+  height: 2.4rem;
+  padding: 0.5rem;
+}
+
+.submitBtn {
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  color: white;
+  font-family: var(--primary-fontFamily);
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.lastPara {
+  font-family: var(--primary-fontFamily);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.horizontalLine {
+  margin: 0 auto;
+  display: flex;
+  width: 31vw;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.horizontalLine > p {
+  font-family: var(--primary-fontFamily);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.horizontalLine > div {
+  height: 0;
+  border: 1px solid #bdbdbd;
+  width: 100%;
+}
+
+.registerBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  background-color: transparent;
+  cursor: pointer;
+  height: 2.5rem;
+  border: 2px solid #bdbdbd;
+  border-radius: 10px;
+  width: 31vw;
+  font-family: var(--primary-fontFamily);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.error {
+  font-family: var(--secondary-fontFamily);
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #ff0000;
+}
+
+@media (max-width: 768px) {
+  .loginBox {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .heading small {
+    font-size: 2vh;
+    font-weight: lighter;
+  }
+
+  .main {
+    height: 85vh;
+    padding: 4vh 4vw;
+
+    heading {
+      width: 100%;
+      font-size: 4.5vh;
+      color: #2e0052;
+    }
+  }
+}

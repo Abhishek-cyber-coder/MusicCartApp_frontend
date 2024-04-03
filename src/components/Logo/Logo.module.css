@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.main > p {
+  font-family: var(--primary-fontFamily);
+  font-weight: 600;
+
+  color: var(--primary-color);
+}

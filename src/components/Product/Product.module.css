@@ -1,0 +1,166 @@
+.posterSection {
+  width: 87vw;
+  margin: auto;
+  margin-top: 1vh;
+  height: 27vh;
+  background: linear-gradient(90deg, #7286b4 0%, #e794ce 100%);
+  border-radius: 1rem;
+  padding-left: 3vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 5vh;
+    color: #2e0052;
+    font-weight: 500;
+  }
+
+  img {
+    position: sticky;
+    height: 33vh;
+    aspect-ratio: 4 / 3;
+    margin-bottom: 6vh;
+  }
+}
+
+.searchBarContainer {
+  height: 8vh;
+  padding-left: 1rem;
+  display: flex;
+  border: 3px solid #c8c8c8;
+  width: 87vw;
+  margin: 1rem auto;
+  border-radius: 48px;
+}
+
+.searchBarContainer > img {
+  width: 2rem;
+}
+
+.searchBarContainer > input {
+  width: 100%;
+  border-radius: 45px;
+  border: none;
+  outline: none;
+  font-family: var(--primary-fontFamily);
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+
+.allFiltersContainer {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  width: 87vw;
+  margin: 1rem auto;
+  font-family: var(--primary-fontFamily);
+  font-weight: 500;
+}
+
+.productDisplayStyle {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.productDisplayStyle > svg:nth-child(1) {
+  height: 5vh;
+  cursor: pointer;
+}
+.productDisplayStyle > svg:nth-child(2) {
+  height: 6vh;
+  cursor: pointer;
+}
+
+.filterContainer {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  column-gap: 1vw;
+}
+
+.sortingContainer {
+  height: 100%;
+  min-width: fit-content;
+}
+
+.sortingBox {
+  height: 100%;
+  min-width: fit-content;
+}
+
+.gridViewContainer {
+  display: grid;
+  justify-content: space-between;
+  row-gap: 2vh;
+  width: 89%;
+  margin: 3rem auto;
+  grid-template-columns: 23% 23% 23% 23%;
+}
+
+.listViewContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4vh;
+  width: 87vw;
+  margin: 4rem auto;
+}
+
+.push {
+  height: 3vh;
+}
+
+@media (max-width: 768px) {
+  hr {
+    width: 100%;
+    color: #bbbaba;
+  }
+
+  .posterSection {
+    height: 16vh;
+
+    p {
+      font-size: 2.5vh;
+      font-weight: 600;
+    }
+
+    img {
+      height: 20vh;
+      width: 40vw;
+      margin-bottom: 4vh;
+    }
+
+    div {
+      height: 90%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1vh;
+      justify-content: center;
+    }
+  }
+
+  .allFiltersContainer {
+    gap: 2vw;
+    min-height: 6vh;
+    overflow-x: scroll;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+  }
+
+  .allFiltersContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .gridViewContainer {
+    row-gap: 2vh;
+    grid-template-columns: 48% 48%;
+  }
+}
