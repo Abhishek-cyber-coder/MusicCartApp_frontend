@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./ProductDetails.module.css";
 import starIcon from "../../assets/icon/starIcon.svg";
+import prevArrow from "../../assets/icon/prevArrow.svg";
 import { useNavigate, useParams } from "react-router-dom";
 import { getProductByIdApi } from "../../apis/product";
 import { useDispatch, useSelector } from "react-redux";
@@ -61,7 +62,7 @@ function ProductDetails({ mobileView }) {
               navigate(-1);
             }}
           >
-            🡨
+            <img src={prevArrow} alt="Prev arrow" />
           </button>
         ) : (
           <button

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./UserCart.module.css";
 import bagImg from "../../assets/images/bagImg.png";
+import prevArrow from "../../assets/icon/prevArrow.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCartDetail } from "../../Features/cart/cartSlice";
 import { useNavigate } from "react-router-dom";
@@ -28,7 +29,7 @@ function UserCart({ mobileView }) {
               navigate(-1);
             }}
           >
-            🡨
+            <img src={prevArrow} alt="Prev arrow" />
           </button>
         ) : (
           <button

@@ -121,8 +121,20 @@
     font-weight: lighter;
   }
 
+  .horizontalLine {
+    width: unset;
+  }
+
+  .horizontalLine > div {
+    width: 20vw;
+  }
+
+  .registerBtn {
+    width: 87vw;
+  }
+
   .main {
-    height: 85vh;
+    height: unset;
     padding: 4vh 4vw;
 
     heading {

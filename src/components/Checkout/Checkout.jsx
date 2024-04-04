@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Checkout.module.css";
 import Select from "react-select";
+import prevArrow from "../../assets/icon/prevArrow.svg";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -104,7 +105,7 @@ function Checkout({ invoiceId, mobileView }) {
     <div
       style={
         mobileView
-          ? { marginTop: "40px" }
+          ? { marginTop: "10vh" }
           : { marginTop: `${selectNavbarHeight}px` }
       }
       className={styles.checkoutContainer}
@@ -116,7 +117,7 @@ function Checkout({ invoiceId, mobileView }) {
               navigate(-1);
             }}
           >
-            🡨
+            <img src={prevArrow} alt="Prev arrow" />
           </button>
         )}
       </div>

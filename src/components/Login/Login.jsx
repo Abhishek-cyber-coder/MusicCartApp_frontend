@@ -113,7 +113,11 @@ function Login() {
             <Logo _heightAndWidth="40px" _fontSize="2rem" />
           </div>
         )}
-        <div className={styles.main}>
+
+        <div
+          style={mobileView ? { marginTop: "50px" } : null}
+          className={styles.main}
+        >
           {mobileView && <heading>Welcome</heading>}
           <div className={styles.loginBox}>
             <p className={styles.heading}>

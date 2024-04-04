@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import styles from "./Invoices.module.css";
 import invoiceImg from "../../assets/images/invoiceImg.png";
 import blackInvoiceImg from "../../assets/images/blackInvoiceFooter.png";
+import prevArrow from "../../assets/icon/prevArrow.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import {
@@ -13,6 +14,7 @@ function Invoices({ mobileView }) {
   const userName = getLocalStorageData("name");
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const selectNavbarHeight = useSelector((state) => state.ui.navbarHeight);
 
   const invoices = useSelector(selectAllInvoices);
 
@@ -24,7 +26,14 @@ function Invoices({ mobileView }) {
     dispatch(fetchInvoicesAsync());
   }, [dispatch]);
   return (
-    <div style={{ marginTop: "50px" }} className={styles.mainContainer}>
+    <div
+      style={
+        mobileView
+          ? { marginTop: "10vh" }
+          : { marginTop: `${selectNavbarHeight}px` }
+      }
+      className={styles.mainContainer}
+    >
       <div className={styles.buttonRow}>
         {mobileView ? (
           <button
@@ -32,7 +41,7 @@ function Invoices({ mobileView }) {
               navigate(-1);
             }}
           >
-            🡨
+            <img src={prevArrow} alt="Prev arrow" />
           </button>
         ) : (
           <button
